@@ -1,0 +1,11 @@
+inicia
+>> vagrant up
+
+pausa
+>> vagrant suspend
+
+para
+>> vagrant halt
+
+
+

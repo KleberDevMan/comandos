@@ -1,0 +1,103 @@
+"Preferivel que se escreva código RUBY à código HTML"
+
+-----------------
+
+
+----------------
+MOSTRAR OS GENERATORS POSSIVEIS
+>> rails g
+
+SCAFFOLD
+>> rails g scaffold teste atrr1, atrr2...
+ 
+CONTROLLER
+>> rails g controller teste
+>> rails d controller teste
+
+VIEW
+>> rails g controller teste index
+
+MODEL
+>> rails g model teste
+
+----------------
+
+.html.ERB -> CODIGO RUBY NO HTML
+<% %>
+<%= %>
+
+-----------------
+
+ADD FOREN_KEY
+>> rails g migration AddInvoiceToAnswers invoice:references
+
+CRIAR BANCO
+>> rake db:create
+
+EXECUTA MIGRACAO
+>> rake db:migrate
+
+DATA BASE
+>> rails db
+	>> .tables
+	>> .schema "tabela"
+	>> ctrl + c ( sair )
+
+--------------------
+CONSOLE
+
+TRABALHAR NO CONSOLE SEM ALTERAR OS DADOS
+>> rails c --sandbox
+
+>> rails c
+	2 x TAB: oções
+
+	>> help
+	>> Entidade.new
+	>> objeto //inpeciona objeto
+	>> objeto.save
+	>> objeto.create
+
+
+	APP (consultar path, etc)
+	>>
+
+	HELP (verificar o retorno dos helps)
+	>>
+
+	>> Coin.last
+	>> Coin.first
+	>> Coin.all
+	
+	IDENTIFICAR O AMBIENTE DE TRABALHO
+	>> Rails.env
+     
+---------------------
+HELPS (métodos prontos que podem ser usados nas views)
+
+-> LINK_TO
+-> IMAGE_LINK
+...
+-> CRIE SEU PROPRIO HELPER
+
+------------------
+ALL ROUTES
+localhost:3000/rails/info/routes
+
+--------------
+PARTIALS (Uma view dentro da outra)
+
+
+--------------
+FILTROS (metodos que são executados antes 
+ou depois de uma determinada #action (show, view, delete, etc))
+
+>> befere_action :set_coin, only: [:show, :update]
+
+
+
+
+create role adventist_camp with createdb login password 'KLEBER8080';
+
+
+

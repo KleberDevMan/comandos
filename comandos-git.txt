@@ -1,0 +1,8 @@
+ver qual diretorio estou
+>> pwd
+
+ir para um diretorio rapidamente
+>> cd /C/projeto-rails-V	
+
+limpar tela
+:: ctrl + L

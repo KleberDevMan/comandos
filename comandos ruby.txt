@@ -1,0 +1,82 @@
+Documentação
+? https://www.ruby-lang.org/pt/documentation/
+? Core
+? http://ruby-doc.org/core-2.5.1/
+? Standard Library
+? http://ruby-doc.org/stdlib-2.5.1/
+? API Dock
+? https://apidock.com/ruby
+
+
+
+
+--- COMMON COMMANDS
+
+
+
+Usando o gerenciador de pacotes do Ruby
+>> gem intall rails
+
+versoes especificas:
+>> gem install rails -v 5.2.0
+
+interpretador online
+>> irb
+
+pry: melhora o irb
+>> gem install pry
+
+saber quais metodos o objeto tem
+>> objeto. + TAB
+>> + Q (para sair)
+
+listando as gems
+>> gem list
+
+pesquisando gem
+>> gem list <parte do nome da gem>
+
+
+---------- STRING ---------------
+reverse string
+>> "kleber".reverse
+
+inpecionar string
+>> "kleber/n/n".inpect
+
+remove os "/n"
+>> "kleber/n".chomp
+
+exibir so uma letra
+>> puts "Kleber"[0]
+
+a = "Curso"
+
+b = 'Rails'
+ 
+
+puts a + b #gera novo objeto
+
+puts a << b #modifica o a
+
+
+
+#interpolacao só em ""
+
+n = 3
+
+puts "Número #{n}"
+
+--------- FIM STRING -------------
+
+inteiro muito grande
+>> i = 1_000_000_000
+==
+>> i = 1000000000
+
+
+
+HASH (chava : valor)
+ruby v.1.9+:
+h = {"x": 15, "curso": "rails"}
+puts h["curso"]

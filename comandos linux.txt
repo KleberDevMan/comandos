@@ -1,0 +1,25 @@
+
+VER A VERSAO
+>> cat /etc/issue
+
+
+------------ Conexao toAlth
+
+HOST: srvdt.b
+SID: dbdt
+
+USER: usr_gabrielsantos
+SENHA: e-gov@sefaz
+
+----------------  RAILS WITH ORACLE
+
+
+-- ARRUMA
+export LD_LIBRARY_PATH=$(pwd)
+
+-- STRINGS DE CONEXAO
+./sqlplus usr_gabrielsantos/e-gov@sefaz@10.9.7.54:1521/dbdt
+./sqlplus siatdesv/desenvolvimento@10.9.7.54:1521/dbdt
+
+---- TESTE
+ruby -rubygems -e "require 'oci8'; OCI8.new('siatdesv','desenvolvimento','10.9.7.54:1521/dbdt').exec('select * from USUARIOEGEFAZ') do |r| puts r.join(','); end"

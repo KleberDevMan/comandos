@@ -1,0 +1,26 @@
+EMITENTE
+CNPJ
+xNome
+xFant
+
+ENDERECO
+xLgr
+nro
+xBairro
+xMun
+uf
+pais
+fone
+
+DESTINATARIO
+cpf
+xNome
+
+PRODUTO 
+xProd
+uCom
+qCom
+vUnCom
+
+
+rails generate model cnpj enome fant lgr bairro mun uf pais fone cpf dnome
