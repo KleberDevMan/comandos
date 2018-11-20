@@ -1,6 +1,11 @@
 
 VER A VERSAO
 >> cat /etc/issue
+||
+>> lsb_release -a ; getconf LONG_BIT
+
+CHAMA O INTERPRETADOR RUBY
+source ./usr/local/rvm/scripts/rvm
 
 
 ------------ Conexao toAlth
