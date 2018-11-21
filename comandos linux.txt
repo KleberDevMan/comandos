@@ -4,8 +4,9 @@ VER A VERSAO
 ||
 >> lsb_release -a ; getconf LONG_BIT
 
-CHAMA O INTERPRETADOR RUBY
-source ./usr/local/rvm/scripts/rvm
+export LD_LIBRARY_PATH=/usr/lib/oracle/18.3/client64/lib/
+/usr/lib/oracle/18.3/client64/bin/sqlplus siatdesv/desenvolvimento@//10.9.7.54:1521/dbdt
+
 
 
 ------------ Conexao toAlth
