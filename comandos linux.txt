@@ -9,6 +9,8 @@ export LD_LIBRARY_PATH=/usr/lib/oracle/18.3/client64/lib/
 
 
 
+//////>>export LD_LIBRARY_PATH=$LD_LIBRARY_PATH
+
 ------------ Conexao toAlth
 
 HOST: srvdt.b
@@ -29,3 +31,11 @@ export LD_LIBRARY_PATH=$(pwd)
 
 ---- TESTE
 ruby -rubygems -e "require 'oci8'; OCI8.new('siatdesv','desenvolvimento','10.9.7.54:1521/dbdt').exec('select * from USUARIOEGEFAZ') do |r| puts r.join(','); end"
+
+
+
+Você poderia postar a saída dos seguintes comandos?
+
+ls -l /usr/lib/oracle/18.3/client64/lib/
+ldd /home/estagiario-kleber/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/ruby-oci8-2.2.6.1/lib/oci8lib_250.so
+readelf -d /home/estagiario-kleber/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/ruby-oci8-2.2.6.1/lib/oci8lib_250.so
